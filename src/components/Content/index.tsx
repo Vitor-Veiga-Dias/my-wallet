@@ -1,10 +1,12 @@
 import React from "react";
 import { Container } from "./styled";
+import { Props } from "./types";
 
-const Content: React.FC = () => {
+
+const Content = ({ children }: Props) => {
     return (
         <Container>
-            <h1>Content</h1>
+            {children}
         </Container>
     )
 }
