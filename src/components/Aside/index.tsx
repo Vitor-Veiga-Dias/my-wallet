@@ -5,14 +5,14 @@ import {
     MdArrowUpward,
     MdExitToApp
 } from 'react-icons/md';
-import { 
+import {
     Container,
     Header,
     LogImg,
     MenuContainer,
     MenuItemLink,
     Title
- } from './styled';
+} from './styled';
 import LogoImg from '../../assets/logo.svg';
 
 const Aside: React.FC = () => {
@@ -23,20 +23,20 @@ const Aside: React.FC = () => {
                 <Title>My Wallet</Title>
             </Header>
             <MenuContainer>
-                <MenuItemLink href=''>
+                <MenuItemLink href='/Dashboard'>
                     <MdDashboard />
                     Deshboard
                 </MenuItemLink>
-                <MenuItemLink href=''>
+                <MenuItemLink href='/list/entry-balance'>
                     <MdArrowUpward />
                     Entradas
                 </MenuItemLink>
-                <MenuItemLink href=''>
-                <MdArrowDownward />
+                <MenuItemLink href='/list/exit-balance'>
+                    <MdArrowDownward />
                     Saidas
                 </MenuItemLink>
                 <MenuItemLink href=''>
-                <MdExitToApp />
+                    <MdExitToApp />
                     Sair
                 </MenuItemLink>
             </MenuContainer>
