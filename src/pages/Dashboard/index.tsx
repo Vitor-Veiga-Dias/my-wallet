@@ -5,17 +5,17 @@ import { Container } from "./styled";
 
 const Dashboard: React.FC = () => {
     const options = [
-        {value: 'Vitor', label: 'Vitor'},
-        {value: 'Maria', label: 'Maria'},
-        {value: 'Gab', label: 'Gab'}
+        { value: 'Vitor', label: 'Vitor' },
+        { value: 'Maria', label: 'Maria' },
+        { value: 'Gab', label: 'Gab' }
     ]
     return (
         <Container>
             <ContentHeader lineColor="#F7931B" title="Dashboard">
-                <SelectInput options={options} />
+                <SelectInput onChange={() => { }} options={options} />
             </ContentHeader>
         </Container>
     );
 }
 
-export default  Dashboard;
+export default Dashboard;
